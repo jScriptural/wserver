@@ -113,7 +113,8 @@ void *start_rtn(void *arg)
     pthread_exit((void*) 1);
   }
   pthread_mutex_unlock(&omutex);
-  get_rtn(clientfd,&req);
+  if(req.method == HTTP_GET)
+    get_rtn(clientfd,&req);
   close(clientfd);
   pthread_exit(NULL);
 }
