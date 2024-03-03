@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+install_path=${PATH##*:};
+
+#compile executable and cleanup .o files
+make && make clean
+
+#move the executable to one of path directory
+mv wserver $install_path;
+
+exit 0;
+

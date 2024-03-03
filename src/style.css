@@ -1,0 +1,23 @@
+
+:root {
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  width: 100%;
+  transition: all 1s;
+}
+.gallery {
+  display: grid;
+  grid: auto / repeat(2,45vw);
+  grid-gap: 2rem;
+}
+.gallery figure {
+  width: 80%;
+  border: 5px solid orange;
+  transition: all 1s;
+  height: fit-content;
+  background-color: orange;
+  box-shadow: 1px 10px 4px #c1c1c1;
+}
+
