@@ -47,7 +47,7 @@ int reqparser(int sockfd, struct request *req)
   if((recvbytes = recv(sockfd,buf,REQBUFSZ,0)) <= 0)
     return -1;
 
-  if((fdout = open(reqfile,O_WRONLY|O_CREAT|O_TRUNC)) < 0){
+  if((fdout = open(reqfile,O_WRONLY|O_CREAT,S_IRUSR|S_IWUSR)) < 0){
     perror("open");
     return -1;;
 
