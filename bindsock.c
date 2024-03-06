@@ -1,12 +1,4 @@
-#include <sys/socket.h>
-#include <netdb.h>
-#include <errno.h>
-#include <netinet/in.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <arpa/inet.h>
-
+#include "bindsock.h"
 
 int bindsock(struct addrinfo *info)
 {

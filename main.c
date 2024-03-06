@@ -18,7 +18,6 @@
 #include "parser.h"
 #include "err.h"
 
-#define BUFLEN 128
 #define BUFSIZE 1024
 #define QLEN 2
 
@@ -63,7 +62,6 @@ int main(int argc , string argv[])
     pthread_t tid;
     if((err= pthread_create(&tid,&attr,start_rtn,&clientfd)) != 0){
       err_log((char*) strerror(err));
-      exit(1);
     }
   }
 

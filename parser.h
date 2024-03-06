@@ -2,6 +2,18 @@
 #define _PARSER_H
 
 #include <netinet/in.h> //for in_port_t
+#include <stdlib.h>
+#include <fcntl.h>
+#include <libgen.h>
+#include <errno.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <string.h>
+#include <pthread.h>
+#include <netinet/in.h>
+
+
 
 #define DIRNAME_MAX 2048
 #define REQBUFSZ 4096

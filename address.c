@@ -1,8 +1,4 @@
-#include <sys/socket.h>
-#include <netdb.h>
-#include <string.h>
-#include <stdlib.h>
-
+#include "address.h"
 
 int getaddr(const char *hostname,const char *servname,struct addrinfo **info)
 {

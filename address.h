@@ -1,6 +1,11 @@
 #ifndef _ADDRESS_H
 #define _ADDRESS_H
 
+#include <sys/socket.h>
+#include <netdb.h>
+#include <string.h>
+#include <stdlib.h>
+
 /* getaddr - wrapper for getaddrinfo.
  * map a hostname and a service name to
  * SOCK_STREAM type  on  AF_INET domain address.

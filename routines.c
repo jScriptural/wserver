@@ -1,9 +1,3 @@
-#include <pthread.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <libgen.h>
-#include <sys/stat.h>
-#include "parser.h"
 #include "routines.h"
 
 extern pthread_mutex_t omutex;

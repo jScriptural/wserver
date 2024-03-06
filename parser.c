@@ -1,16 +1,4 @@
-#include <stdlib.h>
-#include <fcntl.h>
-#include <libgen.h>
-#include <errno.h>
-#include <stdbool.h>
-#include <unistd.h>
-#include <sys/wait.h>
-#include <string.h>
-#include <pthread.h>
-#include <netinet/in.h>
 #include "parser.h"
-
-
 
 static char *replace(int chr,int sub,char buf[],size_t nbytes,bool fwd,bool all)
 {
